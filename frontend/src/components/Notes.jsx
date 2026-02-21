@@ -29,7 +29,7 @@ export default function Notes() {
     const { username } = user;
 
     try {
-      const apiUrl = "http://localhost:5000/api/add-note";
+      const apiUrl = "https://note-app-mzs2.onrender.com/api/add-note";
       const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
