@@ -1,0 +1,31 @@
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    top: 0;
+}
+h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+li:hover{
+    color: #ccc;
+}
+li.active{
+    color: #fff;
+}
