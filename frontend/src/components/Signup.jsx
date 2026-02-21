@@ -13,7 +13,7 @@ export default function Signup() {
         const email = e.target[1].value;
         const password = e.target[2].value;
 
-        const apiRoute = "http://localhost:5000";
+        const apiRoute = "https://note-app-mzs2.onrender.com";
         try {
             const res = await fetch(`${apiRoute}/api/signup`, {
                 method: "POST",
