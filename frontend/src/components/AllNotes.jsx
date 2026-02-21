@@ -32,7 +32,7 @@ export default function AllNotes() {
     const fetchNotes = async () => {
         try {
             setLoading(true);
-            const api = 'http://localhost:5000/api/notes';
+            const api = 'https://note-app-mzs2.onrender.com/api/notes';
             const res = await fetch(api);
             
             if (!res.ok) {
@@ -64,7 +64,7 @@ export default function AllNotes() {
             "Are you sure you want to move this note to trash? You can restore it later from the Trash page.",
             async () => {
                 try {
-                    const res = await fetch(`http://localhost:5000/api/notes/${id}`, {
+                    const res = await fetch(`https://note-app-mzs2.onrender.com/api/notes/${id}`, {
                         method: 'DELETE'
                     });
                     if (res.ok) {
