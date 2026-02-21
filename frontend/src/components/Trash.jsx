@@ -71,7 +71,7 @@ export default function Trash() {
             "Are you sure you want to permanently delete this note? This action cannot be undone.",
             async () => {
                 try {
-                    const res = await fetch(`http://localhost:5000/api/notes/permanent/${id}`, {
+                    const res = await fetch(`https://note-app-mzs2.onrender.com/api/notes/permanent/${id}`, {
                         method: 'DELETE'
                     });
                     if (res.ok) {
