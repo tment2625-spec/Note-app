@@ -28,7 +28,7 @@ export default function Trash() {
     const fetchTrashedNotes = async () => {
         try {
             setLoading(true);
-            const api = 'http://localhost:5000/api/notes/trash';
+            const api = 'https://note-app-mzs2.onrender.com/api/notes/trash';
             const res = await fetch(api);
             
             if (!res.ok) throw new Error(`API error: ${res.status}`);
@@ -50,7 +50,7 @@ export default function Trash() {
 
     const handleRestore = async (id) => {
         try {
-            const res = await fetch(`http://localhost:5000/api/notes/restore/${id}`, {
+            const res = await fetch(`https://note-app-mzs2.onrender.com/api/notes/restore/${id}`, {
                 method: 'PUT'
             });
             if (res.ok) {
