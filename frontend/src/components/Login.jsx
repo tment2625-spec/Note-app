@@ -12,7 +12,7 @@ export default function Login() {
         const username = e.target[0].value;
         const password = e.target[1].value;
 
-        const apiRoute = "http://localhost:5000";
+        const apiRoute = "https://note-app-mzs2.onrender.com";
         try {
             const res = await fetch(`${apiRoute}/api/login`, {
                 method: "POST",
